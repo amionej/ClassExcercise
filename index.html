@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+    <meta charset="utf-8">
+    <link type= "text/css" href = "./css/main.css" rel="stylesheet">
 		<title>Title of Page</title>
 	</head>
 	<body>
@@ -16,55 +17,55 @@
     <form>
       <fieldset>
         <legend>New account registry</legend>
-        <p>Your information is safe with us</p>
-          <div>
+        <div class = "info">Your information is safe with us</div>
+        <div class = "lab">
             <label for="complete-name">Complete Name</label>
-          </div>
-          <div>
-            <input type="text" name="complete-name">
-          </div>
-          <div>
-            <label for="email">Email</label>
-          </div>
-          <div>
-            <input type="email" name="email">
-          </div>
-          <div>
-            <label for="password">Password</label>
-          </div>
-          <div>
-            <input type="password" name="password">
-          </div>
-          <div>
-            <label for="confirmpassword">Password confirmation</label>
-          </div>
-          <div>
-            <input type="password" name="confirmpassword">
-          </div>
-          <div>
-            <p>Country</p>
-          </div>
-          <div>
-            <select>
-                 <option value ="MX">
-                       Mexico
-                 </option>
-                 <option value ="FR">
-                       France
-                 </option>
-                </select>
-          </div>
-          <div>
-            <label for="male">Masculine</label>
-            <input type="radio" id="male" name="sex">
-          </div>
-          <div>
-            <label for="female">Feminine</label>
-            <input type="radio" id = "female" name="sex">
-          </div>
-          <div>
-            <button type="button">Cancel</button>
-            <button type="submit">Submit</button>
-          </div>
-        </fieldset>
+        </div>
+        <div>
+          <input id = "inp" class ="formElement" type="text" name="complete-name">
+        </div>
+        <div class = "lab">
+          <label for="email">Email</label>
+        </div>
+        <div>
+          <input id = "inp" class ="formElement" type="email" name="email">
+        </div>
+        <div class = "lab">
+          <label for="password">Password</label>
+        </div>
+        <div>
+          <input id = "inp" class ="formElement" type="password" name="password">
+        </div>
+        <div class = "lab">
+          <label for="confirmpassword">Password confirmation</label>
+        </div>
+        <div>
+          <input id = "inp" class ="formElement" type="password" name="confirmpassword">
+        </div>
+        <div class = "lab">
+          Country
+        </div>
+        <div>
+          <select>
+              <option value ="MX">
+                    Mexico
+              </option>
+              <option value ="FR">
+                   France
+             </option>
+          </select>
+        </div>
+        <div class = "lab">
+          <label for="male">Masculine</label>
+          <input id = "inp" class ="formElement" type="radio" id="male" name="sex">
+        </div>
+        <div class = "lab">
+          <label for="female">Feminine</label>
+          <input id = "inp" class ="formElement" type="radio" id = "female" name="sex">
+        </div>
+        <div class = "lab">
+          <button class = "formButton" id = "cancelButton" type="button">Cancel</button>
+          <button class = "formButton" id = "submitButton" type="submit">Submit</button>
+        </div>
+      </fieldset>
     </form>

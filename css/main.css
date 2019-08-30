@@ -1,0 +1,88 @@
+/*elementt{
+    /*mbappe --> margin -> border -> padding
+    padding: 10px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding: 5px 15px 10px 20px; /*top right bottom left, clockwise
+    padding: 20px 5px; /*top-bottom and right-left
+    border: 1px solid blue; /*size type color*//*color may be #fffff or rgb(255,255,255)
+}*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: blue; /*will affect everything in the body*/
+    font-size: 13px;
+    font-family: Verdana, sans-serif; /*sans-serif is the version without decorations*/
+}
+
+h1{
+    padding: 20px;
+    margin: 0;
+    color: white;
+    background-color: #55b3c5;
+}
+
+fieldset{
+    border: 2px dashed #DDD;
+    margin: 20px;
+    padding: 20px;
+}
+
+legend{
+    font-size: 1.3em;
+    font-weight: 900; /*1-999, boldness*/
+}
+
+fieldset > div.info {
+    /*affects the immediate divs in a fieldset. Doesn't affect divs inside other elements in the fieldset*/
+    border: 1px solid #6278b0;
+    padding: 7px;
+    color: #42579C;
+    text-align: center;
+    background-image: url('../assets/info.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 3% 100%;
+    background-color: #cce9f8;
+    /* also can be put as: background-image: url('../assets/info.png') no-repeat center left blue*/
+}
+
+fieldset div.lab{
+    padding-top: 10px;
+}
+
+/*fieldset div{
+    /*targets all the divs inside
+}
+fieldset div .info{
+    /*divs in fieldset that have class info
+}*/
+
+.formElement, select { /*for 2 separate things*/
+    padding: 5px 10px;
+    width: 250px;
+}
+
+#submitButton{
+    background-color: #56c56f;
+}
+#cancelButton{
+    background-color: #d9534f;
+    margin-right: 20px;
+}
+.formButton{
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+.formButton:hover{
+    cursor: pointer;
+    color: yellow;
+}
